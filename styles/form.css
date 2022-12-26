@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+}
+
+#signinDiv {
+  display: none;
+}
+
+#signupDiv {
+  /* display: none; */
+
+}
+.form>:nth-child(n+1){
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+#leaderBoard {
+  display: none;
+}
+
+#signbutton {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#signbutton button {
+  background-color: teal;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+#signbutton button:hover {
+  color: teal;
+  background-color: white;
+}

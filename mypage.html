@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <img src="./img/typing(1).png" alt="" />
+        <span class="h2">Typing Test Lite</span>
+      </div>
+      <div class="account">
+        <a href="./index.html">Home</a>
+        <a href="#" id="account"> Sign In </a>
+      </div>
+    </div>
+    <div class="container">
+      <div id="leaderBoard">
+        <h3>LeaderBoard</h3>
+        <div id="records">
+
+        </div>
+      </div>
+      <div id="signbutton">
+        <button id="signinre" onclick="buttonSignInF()">Sign In</button>
+        <button id="signupre" onclick="buttonSignUpF()">Sign Up</button>
+      </div>
+
+
+      <div id="signinDiv">
+        <form action="" class="form" id="signinform">
+          <h4>Sign In</h4>
+          <input type="username" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+      <div id="signupDiv">
+        <form action="" class="form" id="signupform">
+          <h4>Sign Up</h4>
+          <input type="username" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./activeUser.js"></script>

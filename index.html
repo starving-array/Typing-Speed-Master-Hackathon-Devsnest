@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <img src="./img/typing(1).png" alt="" />
+        <span class="h2">Typing Test Lite</span>
+      </div>
+      <div class="account">
+        <a href="./mypage.html" id="account"> Sign In </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="worktable">
+        <div>
+          <div>
+            <button id="reset" onclick="reset()">Reset</button>
+            <button id="start" onclick="startButton()">Start</button>
+          </div>
+          <div>
+            <span>Time:</span>
+            <span class="timer">60</span>
+            <span>Word count: </span>
+            <span class="wordcount">0</span>
+            <span>Accuracy: </span>
+            <span class="accuracy">0</span>
+          </div>
+        </div>
+        <div class="problem">
+          <span class="importproblem"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
+<script src="./activeUser.js"></script>
