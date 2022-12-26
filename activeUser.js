@@ -1,9 +1,9 @@
 let activeUser = localStorage.getItem("activeUser") || null;
 console.log(activeUser);
 // activeUser = "Archie"
-let account = document.getElementById("account");
-let signbutton = document.getElementById("signbutton");
-let leaderBoard = document.getElementById("leaderBoard");
+let account = document.getElementById("account") || null;
+let signbutton = document.getElementById("signbutton") || null;
+let leaderBoard = document.getElementById("leaderBoard") || null;
 
 if (activeUser != null) {
   account.innerText = activeUser;
@@ -11,11 +11,25 @@ if (activeUser != null) {
   leaderBoard.style.display = "block";
 }
 
-let form = document.getElementById("signinform");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log(e);
-});
+let recordFormat = {
+  id: "",
+  wordcount: 0,
+  accuracy: 0,
+  time: "",
+};
+
+let accountForm = {
+  username: "",
+  password: "",
+};
+
+let form = document.getElementById("signinform") || null;
+if (form != null) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log(e);
+  });
+}
 function createAccount(name, password) {
   let sevenDays = JSON.parse(localStorage.getItem("sevenDaysData")) || []; //array
   localStorage.setItem("location", JSON.stringify(locationStoreByCity));
@@ -36,5 +50,3 @@ function buttonSignInF() {
   buttonSignUp.style.display = "none";
   buttonSignIn.style.display = "block";
 }
-
-
